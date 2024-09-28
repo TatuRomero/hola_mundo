@@ -24,12 +24,12 @@
 // Para este proyecto se realizará una calavera.
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(500, 500);
 }
 
 function draw() {
-  background(75, 61, 130);
-  elipse(mouseX + 80, mouseY - 50, 65, 50);
-  fill(255, 0, 255);
+  background(100);
+  elipse(250, 200, 300, 200);
+  fill(255);
   noStroke();
 }

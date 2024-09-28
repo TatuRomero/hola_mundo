@@ -29,7 +29,14 @@ function setup() {
 
 function draw() {
   background(100);
-  elipse(250, 200, 300, 200);
+  ellipse(250, 200, 300, 200);
   fill(255);
   noStroke();
+  Reflect(175, 250, 150, 100);
+  fill(0);
+  ellipse(175, 200, 50, 50);
+  ellipse(325, 200, 50, 50);
+  rect(200, 300, 10, 50);
+  rect(250, 300, 10, 50);
+  rect(300, 300, 10, 50);
 }

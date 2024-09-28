@@ -24,19 +24,30 @@
 // Para este proyecto se realizará una calavera.
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
+  frameRate(40);
+  background(0);
+  rectMode(CENTER);
 }
 
 function draw() {
-  background(100);
-  ellipse(250, 200, 300, 200);
-  fill(255);
+  background(255, random(150, 200), 133, 50);
+  // background(255, 69, 0);
   noStroke();
-  Reflect(175, 250, 150, 100);
-  fill(0);
-  ellipse(175, 200, 50, 50);
-  ellipse(325, 200, 50, 50);
-  rect(200, 300, 10, 50);
-  rect(250, 300, 10, 50);
-  rect(300, 300, 10, 50);
+
+  // Cabeza de la calavera
+  fill(0, 0, 128);
+  ellipse(mouseX + 80, mouseY - 50, 250, 200);
+  rect(mouseX + 80, mouseY + 30, 150, 100);
+
+  // Ojos de la calavera
+  fill(255, random(1, 68), 20, 255);
+  ellipse(mouseX + 25, mouseY - 50, 50, 50);
+  ellipse(mouseX + 135, mouseY - 50, 50, 50);
+
+  // Dientes de la calavera
+  fill(255, 165, 0);
+  rect(mouseX + 35, mouseY + 55, 10, 50);
+  rect(mouseX + 80, mouseY + 55, 10, 50);
+  rect(mouseX + 125, mouseY + 55, 10, 50);
 }

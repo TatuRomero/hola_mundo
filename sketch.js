@@ -6,16 +6,16 @@ function setup() {
 }
 
 function draw() {
-  background(random(150, 200), random(150, 200), 150, 20);
+  background(199, random(150, 200), 133);
 
-  circle(mouseX + 80, mouseY - 50, mouseX);
+  circle(mouseX - 80, mouseY + 50, mouseX);
   strokeWeight(5);
-  noFill();
+  // noFill();
   stroke(mouseY, 255, 0);
-  // fill(mouseY, 0, 30);
+  fill(mouseY, 0, 30);
 
   rect(mouseX, mouseY, 110, 110);
   strokeWeight(1);
-  // fill(150, 0, 150);
+  fill(150, 0, 150);
   stroke(mouseX, mouseY, 100, 100);
 }
